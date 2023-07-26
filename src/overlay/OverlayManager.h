@@ -199,8 +199,8 @@ class OverlayManager
 
     virtual size_t getMaxAdvertSize() const = 0;
 
-    virtual UnorderedMap<Hash, std::vector<std::weak_ptr<Peer>>> getPendingTxSetRequests() = 0;
-
+    virtual UnorderedMap<Hash, std::vector<std::weak_ptr<Peer>>>
+    getPendingTxSetRequests() = 0;
 
     virtual ~OverlayManager()
     {
